@@ -153,6 +153,45 @@
             width: 500px;
             height: 300px;
         }
+         @media only screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .search-bar {
+                padding-left: 0;
+                margin-bottom: 20px;
+            }
+
+            .search-bar i {
+                position: relative;
+                right: 0;
+                top: 0px;
+            }
+
+            nav {
+                display: none;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li {
+                margin: 0;
+            }
+
+            .hamburger-icon {
+                display: block;
+                font-size: 24px;
+                cursor: pointer;
+            }
+        }
     </style>
     <header>
         <div class="container">
@@ -175,6 +214,9 @@
                 <i class="fa-brands fa-instagram" style="color: #050505;"></i>
                 <i class="fa-brands fa-pinterest-p" style="color: #000000;"></i>
                 <i class="fa-brands fa-twitter" style="color: #141414;"></i>
+            </div>
+            <div class="hamburger-icon" onclick="toggleNav()">
+                &#9776; <!-- Hamburger icon -->
             </div>
         </div>
     </header>
@@ -208,7 +250,12 @@
             </div>
         </div>
     </section>
-
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector('nav');
+            nav.style.display = (nav.style.display === 'none' || nav.style.display === '') ? 'block' : 'none';
+        }
+    </script>
 </body>
 
 </html>
