@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Nunito:wght@300&family=Poppins:wght@300;800&family=Roboto:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Nunito:wght@300&family=Poppins:wght@300;800&family=Roboto:wght@300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -90,7 +96,7 @@ body {
   background-color: rgb(255, 255, 255);
   position: absolute;
   bottom: 40px;
-  left: 52px;
+  left: 68px;
   padding: 0px 26px;
   box-shadow: 2px 2px 14px rgb(145, 142, 142);
 }
@@ -126,18 +132,71 @@ body {
 }
 
 
+/* ------ Travel regions ------ */
 
 
+.travel-countries-wrapper{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  width: 100%;
+  grid-gap: 2rem;
+}
 
+.countries-content{
+  margin-top: 1rem;
+}
 
+.travel-countries{
+  padding: 200px;
+}
 
+.travel_cont h2 span{
+color: rgba(255, 0, 0, 0.719);
+}
 
+.countries-content h2{
+  color: rgba(0, 0, 255, 0.607);
+}
+.countries-content p{
+font-size: 14px;
+}
+.countries-content ul{
+list-style: none;
+letter-spacing: 2px;
+line-height: 25px;
+}
 
+.country-names li{
+  font-size: 10px;
+  font-family: "Poppins", sans-serif; 
+}
 
+.country-names li i{
+  color: rgba(0, 0, 255, 0.678);
+  font-size: 12px;
+}
 
+.primary-btn{
+  border: none;
+  background-color: rgba(255, 255, 0, 0.715);
+  padding: 10px;
+}
 
+.second-content{
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  width: 100%;
+  grid-gap: 2rem;
+}
 
-
+.third-content{
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  width: 100%;
+  grid-gap: 2rem;
+}
 
 
 
@@ -200,4 +259,21 @@ body {
     width: 400px;
     height: 70vh;
   }
+}
+
+
+@media (max-width: 992px) {
+  .travel-countries{
+    padding:50px;
+  }
+  
+  .countries-content p{
+    width: 300px;
+  }
+ 
+  .country-names li{
+    font-size: 12px;
+    font-family: "Poppins", sans-serif; 
+  }
+
 }
